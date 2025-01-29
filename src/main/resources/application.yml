@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demo
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/usermanager_db?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+  mvc:
+    static-path-pattern: /static/**
+    view:
+      prefix: /template/
+      suffix: .html
+  web:
+    resources:
+      static-locations: classpath:/static/,classpath:/template/,classpath:/resources/
+server:
+  port: 8080
+
